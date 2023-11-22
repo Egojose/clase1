@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Food Customization</title>
+</head>
+
+<body>
+
+    <div>
+        <label for="foodType">Seleccione un tip de arepa:</label>
+        <select id="toppings">
+            <option value="">Seleccione</option>
+            <option value="chocolo">Chocolo</option>
+            <option value="queso">Queso</option>
+            <option value="blanca">Blanca</option>
+        </select>
+    </div>
+
+    <div>
+        <label for="toppings">Toppings:</label>
+        <input type="text" id="toppings" placeholder="Especifique los toppings">
+    </div>
+
+    <button onclick="processInput()">Enviar</button>
+
+    <div id="root"></div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
