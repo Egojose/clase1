@@ -7,6 +7,17 @@ div {
     margin-bottom: 10px;
 }
 
+.container {
+    width: 400px;
+    position: absolute;
+    left: 42%;
+    right: 50%;
+}
+
+#title {
+    text-align: center;
+}
+
 button {
     padding: 8px 12px;
     font-size: 16px;
