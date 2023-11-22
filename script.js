@@ -11,7 +11,8 @@ function processInput() {
     if (selectedFoodType && toppings) {
         // Display the options in the 'root' div
         var rootDiv = document.getElementById('root');
-        rootDiv.innerHTML = "Seleccionaste: " + selectedFoodType + " con toppings: " + toppings;
+        rootDiv.innerHTML = `Seleccionaste: <strong>${selectedFoodType.toUpperCase()}</strong> con toppings: <b>${toppings.toUpperCase()}</b>`;
+        
     } else {
         alert('Please fill in both fields.');
     }
