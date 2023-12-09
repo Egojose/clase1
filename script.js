@@ -1,19 +1,33 @@
+const myConst = 'Hola'
+
+
+
 function processInput() {
     // Get values from input fields
-    var foodType = document.getElementById('foodType');
-    var selectedFoodIndex = foodType.selectedIndex;
+    let tipoComida = document.getElementById('tipoComida');
+    var indiceSeleccionado = tipoComida.selectedIndex;
 
     // Get the selected option value
-    var selectedFoodType = foodType.options[selectedFoodIndex].value;
+    var comidaSeleccionada = tipoComida.options[indiceSeleccionado].value;
     var toppings = document.getElementById('toppings').value;
 
     // Validate if both fields are filled
-    if (selectedFoodType && toppings) {
+    if (comidaSeleccionada && toppings) {
         // Display the options in the 'root' div
         var rootDiv = document.getElementById('root');
-        rootDiv.innerHTML = `Seleccionaste: <strong>${selectedFoodType.toUpperCase()}</strong> con toppings: <b>${toppings.toUpperCase()}</b>`;
+        rootDiv.innerHTML = `Seleccionaste: ${comidaSeleccionada.toUpperCase()} con toppings: ${toppings.toUpperCase()}`;
         
-    } else {
-        alert('Please fill in both fields.');
+    } else if(comidaSeleccionada && !toppings) {
+        alert('Solo seleccionaste ' + comidaSeleccionada)
+    } else if(toppings && !comidaSeleccionada) {
+        alert ('solo seleccionaste el topping ' + toppings)
     }
+    
+    else {
+        alert('Todos los campos son requeridos.');
+    }
+}
+
+function reasignar() {
+    foodType = 'Hola'
 }

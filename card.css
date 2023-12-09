@@ -1,0 +1,50 @@
+.page__title{
+    text-align: center;
+}
+
+
+
+.cards_container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+}
+
+.card{ 
+    display: flex;
+    flex-direction: column;
+    width: 300px; 
+    background-color: lightgrey;
+    margin: 10px;
+    border: 1px solid green;
+    position: relative;
+}
+.card__header{
+width: 100%;
+}
+.card__body{
+    width: 100%;
+    display: flex;
+   display: inline-block;
+    right: 10px;
+
+}
+.card__body p{
+    width: 50%;
+    
+}
+.card__body img{
+    width: 50%;
+}
+.card__footer{
+position: absolute;
+bottom: 10px;
+}
+
+.img{
+    position: absolute;
+    right: 0;
+    width: 100px;
+    height: 200px;
+}

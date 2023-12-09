@@ -10,27 +10,31 @@
 
 <body>
 
+    <h1>pones el texto aqui</h1>
+
     <h1 id="title">Restaurante de arepas</h1>
-    <div class="container">
-    <div>
-        <label for="foodType">Seleccione un tip de arepa:</label>
-        <select id="foodType">
-            <option value="">Seleccione</option>
-            <option value="chocolo">Chocolo</option>
-            <option value="queso">Queso</option>
-            <option value="blanca">Blanca</option>
-        </select>
+    <div class="contenedor">
+        <div>
+            <label contenedor__select-label for="tipoComida">Seleccione un tip de arepa:</label>
+            <select id="tipoComida">
+                <option value="">Seleccione</option>
+                <option value="chocolo">Chocolo</option>
+                <option value="queso">Queso</option>
+                <option value="blanca">Blanca</option>
+            </select>
+        </div>
+    
+        <div>
+            <label for="toppings">Toppings:</label>
+            <input type="text" id="toppings" placeholder="Especifique los toppings">
+        </div>
+    
+        <button onclick="processInput()">Enviar</button>
+    
+        <div id="root"></div>
+    
+        
     </div>
-
-    <div>
-        <label for="toppings">Toppings:</label>
-        <input type="text" id="toppings" placeholder="Especifique los toppings">
-    </div>
-
-    <button onclick="processInput()">Enviar</button>
-
-    <div id="root"></div>
-</div>
 
     <script src="script.js"></script>
 </body>

@@ -7,7 +7,7 @@ div {
     margin-bottom: 10px;
 }
 
-.container {
+.contenedor {
     width: 400px;
     position: absolute;
     left: 42%;
@@ -28,4 +28,19 @@ button {
     margin-top: 20px;
     font-weight: bold;
     color: green;
+}
+
+p {
+    text-align: center;
+}
+
+.card {
+    width: 300px;
+    height: 300px;
+    border: 1px solid black;
+    background: lightgray;
+}
+
+div > select .mySelect {
+
 }
